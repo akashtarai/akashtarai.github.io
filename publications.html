@@ -243,6 +243,18 @@ document.querySelectorAll('#peer-list, #conf-list').forEach(el => {
   el.style.maxHeight = "0";
 });
 </script>
+<!-- Footer -->
+  <footer class="bg-[#f7f7f7] py-6 text-center text-sm text-[#1A1A1A]">
+    © 2025 Akash Kumar Tarai, Postdoctoral Research Fellow, IISER Berhampur, India
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
 </html>
