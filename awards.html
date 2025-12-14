@@ -9,58 +9,64 @@
     gtag('js', new Date());
 
     gtag('config', 'G-JQN0HVDCCY');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awards & Grants | Akash Kumar Tarai</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    /* Scrollable but hidden scrollbar (ALL browsers) */
+    html, body {
+      font-family: 'Inter', sans-serif;
+      overflow-y: auto;
+      scrollbar-width: none;        /* Firefox */
+      -ms-overflow-style: none;     /* IE / old Edge */
+    }
 
-<style>
-  /* Scrollable but hidden scrollbar (ALL browsers) */
-  html, body {
-    font-family: 'Inter', sans-serif;
-    overflow-y: auto;
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;     /* IE / old Edge */
-  }
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      display: none;                /* Chrome, Edge, Safari */
+    }
 
-  html::-webkit-scrollbar,
-  body::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    display: none;                /* Chrome, Edge, Safari */
-  }
+    .highlight {
+      color: #2E3A59;
+      font-weight: bold;
+    }
 
-  .highlight {
-    color: #2E3A59;
-    font-weight: bold;
-  }
+    ol.custom-list {
+      counter-reset: item;
+      padding-left: 0;
+      list-style: none;
+    }
 
-  ol.custom-list {
-    counter-reset: item;
-    padding-left: 0;
-    list-style: none;
-  }
+    ol.custom-list li {
+      counter-increment: item;
+      position: relative;
+      margin-bottom: 1.2rem;
+      padding-left: 1.8rem;
+      text-align: justify;
+      font-size: 1rem;
+      color: #1A1A1A;
+    }
 
-  ol.custom-list li {
-    counter-increment: item;
-    position: relative;
-    margin-bottom: 1.2rem;
-    padding-left: 1.8rem;
-    text-align: justify;
-    font-size: 1rem;
-    color: #1A1A1A;
-  }
+    ol.custom-list li::before {
+      content: counter(item) ".";
+      position: absolute;
+      left: 0;
+      color: #1A1A1A;
+    }
 
-  ol.custom-list li::before {
-    content: counter(item) ".";
-    position: absolute;
-    left: 0;
-    color: #1A1A1A;
-  }
+    ol.custom-list.reverse {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  </style>
 
-  ol.custom-list.reverse {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-</style>
-
-      
 </head>
 <body class="bg-[#f7f7f7] text-[#1A1A1A]">
 
@@ -131,7 +137,7 @@
         <span class="highlight">International Travel Grant</span>, <i>Science and Engineering Research Board (SERB), India</i>. Sanctioned to attend "EMS LIBS 2023", Porto, Portugal. [Not Availed]
       </li>
       <li>
-        <span class="highlight">National Post Doctoral Fellowship (N-PDF) 2025</span>, <i>Anusandhan National Research Foundation (ANRF), Govt. of India.</i>. [Not Availed]
+        <span class="highlight">National Postdoctoral Research Fellowship (NPDF) 2025</span>, <i>Anusandhan National Research Foundation, Govt. of India.</i>. [Not Availed]
       </li>
     </ol>
   </div>
@@ -165,7 +171,7 @@ document.querySelectorAll('#awards-list, #grants-list').forEach(el => {
 
   <!-- Footer -->
   <footer class="bg-[#f7f7f7] py-6 text-center text-sm text-[#1A1A1A]">
-    © 2025 Akash Kumar Tarai, Research Fellow, NTU Singapore
+    © 2025 Akash Kumar Tarai, Postdoctoral Research Fellow, IISER Berhampur, India
   </footer>
 
   <script>
