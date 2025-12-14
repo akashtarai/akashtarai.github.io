@@ -17,28 +17,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+<style>
+  /* Hide scrollbar but keep scrolling */
+  html, body {
+    font-family: 'Inter', sans-serif;
+    overflow-y: auto;
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE / Edge (legacy) */
+  }
 
-    @media (min-width: 768px) {
-      .sticky-left {
-        position: sticky;
-        top: 20px;
-        z-index: 10;
-      }
-    }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;                /* Chrome, Edge, Safari */
+  }
 
-    .bio-text {
-      text-align: justify;
+  @media (min-width: 768px) {
+    .sticky-left {
+      position: sticky;
+      top: 20px;
+      z-index: 10;
     }
+  }
 
-    .underline-long {
-      border-bottom: 3px solid #FFB800;
-      width: 100%;
-    }
-  </style>
+  .bio-text {
+    text-align: justify;
+  }
+
+  .underline-long {
+    border-bottom: 3px solid #FFB800;
+    width: 100%;
+  }
+</style>
+
 </head>
 
 <body class="bg-[#f7f7f7] text-[#1A1A1A]">
@@ -223,6 +235,7 @@
   </script>
 </body>
 </html>
+
 
 
 
