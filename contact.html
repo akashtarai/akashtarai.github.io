@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Akash Kumar Tarai</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body{
+  font-family:"Source Sans 3",sans-serif;
+  background:#f6f7fb;
+  color:#1f2937;
+  font-size:20px;
+  line-height:1.75;
+}
+
+nav{ font-family:"Space Grotesk",sans-serif; }
+.container{max-width:1100px;margin:auto;padding-left:100px;padding-right:100px;}
+
+.hero{
+  background:linear-gradient(rgba(10,15,30,0.75),rgba(10,15,30,0.85)),
+  url('assets/cover6.jpg');
+  background-size:cover;
+  background-position:center;
+}
+
+.section-title{
+  font-size:2.5rem;
+  font-weight:700;
+  margin-bottom:1.5rem;
+  color:#0f172a;
+  position:relative;
+  padding-bottom:8px;
+}
+
+.section-title::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:65px;
+  height:3px;
+  background:#f59e0b;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="bg-[#0f172a] text-white fixed top-0 w-full z-50">
+  <div class="container px-6 py-4 flex justify-between items-center">
+
+    <div class="hidden md:flex space-x-8 text-xl">
+      <a href="index.html">Home</a>
+    </div>
+
+    <div class="hidden md:flex space-x-8 text-xl">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="awards.html">Awards & Recognitions</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="text-yellow-400">Contact</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden text-xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden flex flex-col bg-[#0f172a] px-6 pb-4 space-y-3 md:hidden">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="awards.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-white py-16 mt-14">
+  <div class="container px-6 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold">Feel free to reach out</h1>
+    <p class="mt-4 text-xl">Open to ideas, collaborations, and scientific conversations</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<main class="container py-14 space-y-16">
+
+<!-- CONTACT SECTION  -->
+<div class="md:flex md:items-center gap-10">
+
+  <!-- LEFT: CONTACT DETAILS -->
+  <div class="md:w-1/2 w-full space-y-6">
+
+    <h2 class="section-title">Contact Information</h2>
+
+    <div>
+      <p class="text-3xl font-semibold text-[#0f172a]">Dr. Akash Kumar Tarai</p>
+      <p class="text-2xl text-[#2E3A59] font-semibold">Research Fellow</p>
+    </div>
+
+    <div class="flex items-start space-x-4">
+      <i class="fas fa-map-marker-alt text-[#2E3A59] mt-1"></i>
+      <p class="text-xl text-justify">
+        N3.1-B3b-03, Centre for Optical & Laser Engineering (COLE), School of Mechanical and Aerospace Engineering, 
+        Nanyang Technological University (NTU), Singapore 50 Nanyang Avenue, Singapore 639798
+      </p>
+    </div>
+
+    <div class="flex items-start space-x-4">
+      <i class="fas fa-envelope text-[#2E3A59] mt-1"></i>
+      <p>
+        <a href="mailto:akashktarai@gmail.com" class="text-xl text-[#2E3A59] hover:text-[#f59e0b]">
+          akashktarai@gmail.com
+        </a><br>
+        <a href="mailto:akash.tarai@ntu.edu.sg" class="text-xl text-[#2E3A59] hover:text-[#f59e0b]">
+          akash.tarai@ntu.edu.sg
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- RIGHT: MAP -->
+  <div class="md:w-1/2 w-full mt-6 md:mt-0">
+    <div class="w-full aspect-[3/2]">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d985.1559009190221!2d103.68209627616001!3d1.3477594315505457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMjAnNTEuMyJOIDEwM8KwNDAnNTcuOSJF!5e0!3m2!1sen!2ssg!4v1778052053724!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#0f172a] text-white py-10 mt-10">
+  <div class="container px-6 text-center">
+
+    <div class="flex justify-center gap-6 text-xl mb-4">
+      <div class="flex justify-center md:justify-start gap-5 text-2xl">
+        <a href="https://www.linkedin.com/in/akash-kumar-tarai-phd-74129b225/" target="_blank" title="LinkedIn" class="hover:text-gray-300">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://scholar.google.co.in/citations?user=3q74S1kAAAAJ&hl=en" target="_blank" title="Google Scholar" class="hover:text-gray-300">
+          <i class="fas fa-graduation-cap"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Akash-Tarai?ev=hdr_xprf" target="_blank" title="ResearchGate" class="hover:text-gray-300">
+          <i class="fab fa-researchgate"></i>
+        </a>
+        <a href="https://orcid.org/my-orcid?orcid=0000-0002-5244-678X" target="_blank" title="ORCID" class="hover:text-gray-300">
+          <i class="fab fa-orcid"></i>
+        </a>
+      </div>
+    </div>
+
+    <p class="text-sm">© 2026 Akash Kumar Tarai</p>
+
+  </div>
+</footer>
+
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

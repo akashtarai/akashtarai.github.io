@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research | Akash Kumar Tarai</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body{
+  font-family:"Source Sans 3",sans-serif;
+  background:#f6f7fb;
+  color:#1f2937;
+  font-size:20px;
+  line-height:1.75;
+}
+
+nav{ font-family:"Space Grotesk",sans-serif; }
+.container{ max-width:1200px; margin:auto; }
+
+.hero{
+  background:linear-gradient(rgba(10,15,30,0.75),rgba(10,15,30,0.85)),
+  url('assets/cover2.jpeg');
+  background-size:cover;
+  background-position:center;
+}
+
+.section-title{
+  font-size:2.5rem;
+  font-weight:700;
+  margin-bottom:2rem;
+  color:#0f172a;
+  position:relative;
+  padding-bottom:8px;
+}
+
+.section-title::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:65px;
+  height:3px;
+  background:#f59e0b;
+}
+
+section{ scroll-margin-top:120px; }
+
+/* research cards */
+.research-card{
+  transition: all 0.3s ease;
+}
+
+.research-card:hover{
+  transform: translateY(-6px);
+}
+
+.research-img{
+  height:260px;
+  width:100%;
+  object-fit:cover;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="bg-[#0f172a] text-white fixed top-0 w-full z-50">
+  <div class="container px-6 py-4 flex justify-between items-center">
+
+    <div class="hidden md:flex space-x-8 text-xl">
+      <a href="index.html">Home</a>
+    </div>
+
+    <div class="hidden md:flex space-x-8 text-xl">
+      <a href="index.html">About</a>
+      <a href="research.html" class="text-yellow-400">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="awards.html">Awards & Recognition</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden text-xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden flex flex-col bg-[#0f172a] px-6 pb-4 space-y-3 md:hidden">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="awards.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-white py-16 mt-14">
+  <div class="container px-6 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold">Research</h1>
+    <p class="mt-4 text-xl">Where light meets matter and ideas take form</p>
+  </div>
+</section>
+
+<!-- RESEARCH SECTION -->
+<section class="container px-6 py-16">
+
+<div class="grid md:grid-cols-2 gap-10">
+
+  <!-- TOPIC 1 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden research-card">
+    <img src="assets/research1.png" class="research-img">
+    <div class="p-6">
+      <h3 class="text-2xl font-bold mb-2">Laser Produced Plasma and Laser Induced Breakdown Spectroscopy (LIBS)</h3>
+      <p class="text-gray-700 text-justify">
+       My research focuses on the fundamental understanding of Laser-Produced Plasma generated during laser–matter interaction and its application in LIBS for elemental analysis and real-time sensing. The work involves investigations of plasma formation mechanisms, emission dynamics, plasma evolution, self-absorption effects, and the influence of laser and ambient parameters on plasma characteristics under different excitation conditions. A major emphasis of this research is the development of robust methodologies for quantitative elemental analysis using LIBS. This includes both calibration-free approaches and calibration-based methods including machine learning framework for rapid and reliable compositional analysis. The research also explores plasma diagnostics for improving analytical accuracy, sensitivity, and reproducibility in complex material systems. Furthermore, LIBS is employed for rapid elemental classification, identification, and quantification of diverse materials, including metallic alloys, polymers, pharmacuiticals, biomedical specimens, and forensic materials.
+      </p>
+    </div>
+  </div>
+
+  <!-- TOPIC 2 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden research-card">
+    <img src="assets/LDW.jpg" class="research-img">
+    <div class="p-6">
+      <h3 class="text-2xl font-bold mb-2">Ultrafast Laser Processing</h3>
+      <p class="text-gray-700 text-justify">
+        My research in ultrafast laser processing focuses on femtosecond laser direct writing (fs-LDW) and laser micromachining driven by the fundamental physics of ultrafast laser–matter interaction. The use of ultrashort fs laser pulses enables highly localized and deterministic energy deposition, allowing precise control over material modification processes such as ablation, refractive index change, and surface restructuring at micro- and nanoscale dimensions with minimal thermal damage. The research involves the fabrication and engineering of functional photonic and microstructured devices for advanced optical and sensing applications. Particular emphasis is placed on understanding the relationship between laser processing parameters, material response, and resulting structural and functional properties to achieve precise and reproducible device fabrication. Furthermore, the work explores laser-induced surface morphology modification for tailoring interfacial and surface properties through hierarchical micro/nanostructuring. This includes the development of functional surfaces with controlled wettability, superhydrophobicity, and enhanced optical or surface interactions.
+      </p>
+    </div>
+  </div>
+
+  <!-- TOPIC 3 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden research-card">
+    <img src="assets/research3.png" class="research-img">
+    <div class="p-6">
+      <h3 class="text-2xl font-bold mb-2">Portable Raman Spectroscopic Systems for Field Applications</h3>
+      <p class="text-gray-700 text-justify">
+        My research focuses on the development of portable and field-deployable Raman spectroscopic systems for rapid molecular identification and real-time chemical analysis. Raman spectroscopy is employed as a powerful vibrational spectroscopic technique for extracting chemically specific information from complex materials through inelastic light scattering and spectral fingerprinting. The work involves molecular classification, compositional analysis, and quantitative characterization of chemically heterogeneous and multicomponent systems, including energetic materials, polymers, biological samples, and other complex chemical matrices. Particular emphasis is placed on resolving overlapping spectral features, improving signal robustness, and enhancing analytical reliability for challenging real-world samples. Furthermore, research efforts are directed toward the development and instrumentation of compact, low-cost, and portable Raman spectroscopic devices optimized for real-time sensing outside conventional laboratory environments. This includes system integration, optical design optimization, hardware interfacing, data-driven spectral analysis, and development of user-interactive graphical user interface (GUI) for optimization and automation.
+      </p>
+    </div>
+  </div>
+
+  <!-- TOPIC 4 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden research-card">
+    <img src="assets/research4.png" class="research-img">
+    <div class="p-6">
+      <h3 class="text-2xl font-bold mb-2">AI and Machine Learning in Optics and Spectroscopy</h3>
+      <p class="text-gray-700 text-justify">
+        My research focuses on the integration of artificial intelligence (AI), machine learning (ML), and deep learning techniques with optical and spectroscopic systems for intelligent data analysis, automated decision-making, and real-time sensing applications. The work spans both classification and regression-based problems, including material identification, elemental classification, wavefront sensing, and quantitative compositional analysis. Particular emphasis is placed on the development of robust and interpretable machine learning pipelines through feature engineering, data fusion, feature selection, dimensionality reduction, and automated feature extraction techniques to improve performance under noise, data overlap, and experimental variability. The research also explores deep learning and transfer learning strategies for improving model generalization across different instruments, experimental conditions, and heterogeneous datasets. Also, efforts are directed toward the development of integrated GUI-based intelligent analytical frameworks for real-time implementation, enabling automated workflows from data acquisition and preprocessing to prediction and visualization. 
+      </p>
+    </div>
+  </div>
+
+  <!-- TOPIC 5 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden research-card">
+    <img src="assets/research5.png" class="research-img">
+    <div class="p-6">
+      <h3 class="text-2xl font-bold mb-2">Adaptive Optics and Wavefront Sensing</h3>
+      <p class="text-gray-700 text-justify">
+        My research in adaptive optics focuses on the development of intelligent wavefront sensing and reconstruction techniques for high-speed and high-accuracy optical aberration measurement. The work combines optical wavefront sensing with machine learning to improve the performance, robustness, and computational efficiency of adaptive optical systems. A major focus of this research is the development of machine learning–assisted Shack–Hartmann wavefront sensing (SHWS) frameworks for rapid wavefront reconstruction. This includes the integration of feature engineering, dimensionality reduction, and deep learning models for direct prediction of wavefront aberrations from SHWS images.The developments aim to enable real-time adaptive optical correction and intelligent wavefront analysis for applications in ophthalmic imaging, microscopy, astronomy, laser systems, free-space optical communication, and high-resolution optical diagnostics.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0f172a] text-white py-10 mt-10">
+  <div class="container px-6 text-center">
+
+    <div class="flex justify-center gap-6 text-xl mb-4">
+      <div class="flex justify-center md:justify-start gap-5 text-2xl">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fas fa-graduation-cap"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-researchgate"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-orcid"></i></a>
+      </div>
+    </div>
+
+    <p class="text-sm">© 2026 Akash Kumar Tarai</p>
+
+  </div>
+</footer>
+
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

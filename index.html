@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akash Kumar Tarai</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body{
+  font-family:"Source Sans 3",sans-serif;
+  background:#f6f7fb;
+  color:#1f2937;
+  font-size:20px;
+  line-height:1.75;
+}
+
+nav{ font-family:"Space Grotesk",sans-serif; }
+.container{ max-width:1200px; margin:auto; }
+
+.hero{
+  background:linear-gradient(rgba(10,15,30,0.75),rgba(10,15,30,0.85)),
+  url('assets/cover1.jpg');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-name{ font-size:3.5rem; font-weight:700; }
+
+/* Portrait */
+@media (max-width:768px) and (orientation:portrait){
+  .hero-name{ font-size:2.2rem; }
+  body{ font-size:16px; }
+}
+
+/* Landscape */
+@media (max-width:900px) and (orientation:landscape){
+  .hero{ padding:40px 0 !important; }
+  .hero-name{ font-size:2.4rem; }
+}
+
+.section-title{
+  font-size:2.5rem;
+  font-weight:700;
+  margin-bottom:1.5rem;
+  color:#0f172a;
+  position:relative;
+  padding-bottom:8px;
+}
+
+.section-title::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:65px;
+  height:3px;
+  background:#f59e0b;
+}
+
+.subnav{
+  position:sticky;
+  top:64px;
+  background:white;
+  z-index:40;
+  border-bottom:1px solid #e5e7eb;
+}
+
+section{ scroll-margin-top:120px; }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="bg-[#0f172a] text-white fixed top-0 w-full z-50">
+  <div class="container px-6 py-4 flex justify-between items-center">
+
+    <div class="hidden md:flex space-x-8 text-xl">
+      <a href="index.html">Home</a>
+    </div>
+
+    <div class="hidden md:flex space-x-8 text-xl">
+      <a href="index.html"class="text-yellow-400">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="awards.html">Awards & Recognition</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden text-xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden flex flex-col bg-[#0f172a] px-6 pb-4 space-y-3 md:hidden">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="awards.html">Awards</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-white mt-[0px] py-24">
+  <div class="container px-6 grid md:grid-cols-2 gap-10 items-center text-center md:text-left">
+
+    <div>
+      <h1 class="hero-name mb-4">Dr. Akash Kumar Tarai</h1>
+
+      <p class="text-xl mb-6">
+        Research Fellow<br>
+        Nanyang Technological University (NTU), Singapore
+      </p>
+
+      <div class="flex justify-center md:justify-start gap-5 text-2xl">
+        <a href="https://www.linkedin.com/in/akash-kumar-tarai-phd-74129b225/" target="_blank" title="LinkedIn" class="hover:text-gray-300">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://scholar.google.co.in/citations?user=3q74S1kAAAAJ&hl=en" target="_blank" title="Google Scholar" class="hover:text-gray-300">
+          <i class="fas fa-graduation-cap"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Akash-Tarai?ev=hdr_xprf" target="_blank" title="ResearchGate" class="hover:text-gray-300">
+          <i class="fab fa-researchgate"></i>
+        </a>
+        <a href="https://orcid.org/my-orcid?orcid=0000-0002-5244-678X" target="_blank" title="ORCID" class="hover:text-gray-300">
+          <i class="fab fa-orcid"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="assets/Akash_cpd.jpg"
+           class="w-56 h-56 md:w-80 md:h-80 object-cover rounded-xl shadow-2xl border-4 border-white">
+    </div>
+
+  </div>
+</section>
+
+<!-- SUB NAV -->
+<div class="subnav">
+  <div class="container px-6 py-3 flex flex-wrap justify-center gap-10 text-xl font-medium">
+    <a href="#bio">Biography</a>
+    <a href="#exp">Professional Experience</a>
+    <a href="#edu">Education</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#workshops">Workshops & Training Programs</a>
+  </div>
+</div>
+
+<div class="container px-6 pt-10">
+  <p class="font-bold text-2xl text-center text-blue-700">Hello! Welcome to my homepage...</p>
+</div>
+
+
+<!-- BIOGRAPHY -->
+<section id="bio" class="container px-6 py-12">
+<h2 class="section-title">Biography</h2>
+
+<p class="mb-4 text-justify">
+I am currently a Research Fellow at the Centre for Optical and Laser Engineering (COLE), School of Mechanical and Aerospace Engineering, Nanyang Technological University, Singapore. My research focuses on fundamental studies of laser-matter interaction, ultrafast laser processing, laser spectroscopy, optical diagnostics, and the integration of machine learning for advanced spectroscopic and sensing applications.
+</p>
+
+<p class="mb-4 text-justify">
+Previously, I worked as a Postdoctoral Research Fellow at the Department of Physical Sciences, Indian Institute of Science Education and Research Berhampur (Dec 2024 – Sep 2025). I was also a Visiting Scholar at the Research School of Earth Sciences, Australian National University (May – Oct 2024), where my research was supported by the prestigious <i>Future Research Talent (FRT) Award</i>.
+</p>
+<p class="mb-4 text-justify">
+I received my Ph.D. in Physics from University of Hyderabad in 2024. My doctoral research focused on the development of LIBS-based elemental analysis techniques and fundamental studies of laser-produced plasma  along with  and the development and instrumentation of laser spectroscopic systems (particularly LIBS and Raman spectroscopy) with integration of machine learning for real-time sensing applications. I also hold an M.Sc. in Physics from Pondicherry University, India and a B.Sc. in Physics from Ravenshaw University, India.
+</p>
+
+<p class="mb-4 text-justify">
+My contributions to laser spectroscopy and optical diagnostics have been recognized through honors including the Best Thesis Award, Best Poster Award, and the <i>Future Research Talent (FRT) Award 2024 from Australian National University</i>. I was also selected for the prestigious National Post Doctoral Fellowship (N-PDF) 2025 by the Anusandhan National Research Foundation, Government of India.
+</p>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="exp" class="bg-white py-14">
+<div class="container px-6">
+<h2 class="section-title">Professional Experience</h2>
+
+<div class="space-y-6">
+
+<div class="border-l-4 border-yellow-500 pl-4">
+  <div class="flex justify-between items-start">
+    <span class="text-xl md:text-2xl font-bold">Research Fellow</span>
+    <span class="text-gray-700:text-xl font-semibold">Oct 2025 - Present</span>
+  </div>
+  <div class="text-gray-700">
+    Centre for Optical and Laser Engineering (COLE), School of Mechanical and Aerospace Engnineering (MAE)<br>
+    Nanyang Technological University (NTU), Singapore <br>
+    Mentor: Assoc Prof. Murukeshan Vadakke Matham
+  </div>
+</div>
+
+<div class="border-l-4 border-yellow-500 pl-4">
+  <div class="flex justify-between items-start">
+    <span class="text-xl md:text-2xl font-bold">Postdoctoral Research Fellow</span>
+    <span class="text-gray-700:text-xl font-semibold">Dec 2024 - Sep 2025</span>
+  </div>
+  <div class="text-gray-700">
+    Department of Physical Sciences<br>
+    Indian Institute of Science Education and Research (IISER), Berhampur, Odisha, India <br>
+    Mentor: Dr. Vyas Akondi
+  </div>
+</div>
+
+<div class="border-l-4 border-yellow-500 pl-4">
+  <div class="flex justify-between items-start">
+    <span class="text-xl md:text-2xl font-bold">Visiting Scholar | Future Research Talent (FRT) Award</span>
+    <span class="text-gray-700:text-xl font-semibold">May 2024 - Oct 2024</span>
+  </div>
+  <div class="text-gray-700">
+    Research School of Earth Sciences (RSES) <br>
+    Australian National University, Canberra, Australia <br>
+    Mentor: Prof. Olivier Alard
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="edu" class="container px-6 py-14">
+<h2 class="section-title">Education</h2>
+
+<div class="space-y-6">
+
+<div class="border-l-4 border-yellow-500 pl-4">
+  <div class="flex justify-between items-start">
+    <span class="text-xl md:text-2xl font-bold">Doctor of Philosophy (Ph.D.) in Physics</span>
+    <span class="text-gray-700:text-xl font-semibold">2024</span>
+  </div>
+  <div class="text-gray-700">
+    Advanced Centre of Research in High Energy Materials (ACRHEM, now DIA-CoE), School of Physics<br>
+    University of Hyderabad, Telangana, India <br>
+    Mentor: Prof. Manoj Kumar Gundawar
+  <p>
+<a href="https://drive.google.com/file/d/1pI9MOtccMtjnFQikNVmexVWAYDb2Bhr_/view?usp=drive_link" target="_blank" class="text-blue-600 hover:text-blue-1000">[Thesis link]</a></p>
+  </div>
+</div>
+
+<div class="border-l-4 border-yellow-500 pl-4">
+  <div class="flex justify-between items-start">
+    <span class="text-xl md:text-2xl font-bold">Master of Science (M.Sc.) in Physics</span>
+    <span class="text-gray-700:text-xl font-semibold">2017</span>
+  </div>
+  <div class="text-gray-700">
+    Department of Physics<br>
+    Pondicherry University, Puducherry, India <br>
+    Mentor: Late Prof. K. Porsezian
+  </div>
+</div>
+
+<div class="border-l-4 border-yellow-500 pl-4">
+  <div class="flex justify-between items-start">
+    <span class="text-xl md:text-2xl font-bold">Bachelor of Science (B.Sc.) in Physics</span>
+    <span class="text-gray-700:text-xl font-semibold">2015</span>
+  </div>
+  <div class="text-gray-700">
+    Department of Physics <br>
+    Ravenshaw University, Odisha, India
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- TEACHING EXPERIENCE -->
+<section id="teaching" class="bg-white py-14">
+<div class="container px-6">
+<h2 class="section-title">Teaching Assistant</h2>
+
+<div class="space-y-4">
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">5.</div>
+    <div class="flex-1">
+      <p>
+        <b>PHY 430: Introduction to Fourier Optics (Jan – May 2025)</b>,
+        Department of Physical Sciences, IISER Berhampur, Odisha, India.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">4.</div>
+    <div class="flex-1">
+      <p>
+        <b>BA 208: Data Visualization (Jan – Jun 2023)</b>,
+        School of Management Studies, University of Hyderabad, India.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">3.</div>
+    <div class="flex-1">
+      <p>
+        <b>PY 507: Laser Physics Lab (Jul – Dec 2021)</b>,
+        School of Physics, University of Hyderabad, India.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">2.</div>
+    <div class="flex-1">
+      <p>
+        <b>IPYT 202: Waves and Oscillations: Sound & Light Lab (Jan – Jun 2019)</b>,
+        School of Physics, University of Hyderabad, India.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">1.</div>
+    <div class="flex-1">
+      <p>
+        <b>PY 506: Optics Lab (July – Dec 2018)</b>,
+        School of Physics, University of Hyderabad, India.
+      </p>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+
+<!-- WORKSHOPS & TRAINING PROGRAMS -->
+<section id="workshops" class="container px-6 py-14">
+<div class="container px-6">
+<h2 class="section-title">Workshops & Training Programs</h2>
+
+<div class="space-y-4">
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">6.</div>
+    <div class="flex-1">
+      <p>
+        <b>Convergence of Multifunctional Materials, Photonics, Bioscience and Artificial Intelligence (MPBA)</b>,
+        Indian Institute of Science Education and Research (IISER) Berhampur, India, 2025.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">5.</div>
+    <div class="flex-1">
+      <p>
+        <b>Machine Learning Workshop</b>,
+        University of Hyderabad, India, 2022.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">4.</div>
+    <div class="flex-1">
+      <p>
+        <b>National Workshop on Explosive Detection (NWED)</b>,
+        High Energy Materials Research Laboratory (HEMRL), Pune, India, 2020.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">3.</div>
+    <div class="flex-1">
+      <p>
+        <b>Workshop on Advances in Optics and Photonics</b>,
+        University of Hyderabad, India, 2019.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">2.</div>
+    <div class="flex-1">
+      <p>
+        <b>Workshop on Photonics for Detonics</b>,
+        Terminal Ballistics Research Laboratory (TBRL), Chandigarh, India, 2019.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITEM -->
+  <div class="flex">
+    <div class="w-8">1.</div>
+    <div class="flex-1">
+      <p>
+        <b>Winter School on Photonics (WSP)</b>,
+        Indian Institute of Science Education and Research (IISER) Kolkata, India, 2013.
+      </p>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-[#0f172a] text-white py-10 mt-10">
+  <div class="container px-6 text-center">
+
+    <div class="flex justify-center gap-6 text-xl mb-4">
+      <div class="flex justify-center md:justify-start gap-5 text-2xl">
+        <a href="https://www.linkedin.com/in/akash-kumar-tarai-phd-74129b225/" target="_blank" title="LinkedIn" class="hover:text-gray-300">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://scholar.google.co.in/citations?user=3q74S1kAAAAJ&hl=en" target="_blank" title="Google Scholar" class="hover:text-gray-300">
+          <i class="fas fa-graduation-cap"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Akash-Tarai?ev=hdr_xprf" target="_blank" title="ResearchGate" class="hover:text-gray-300">
+          <i class="fab fa-researchgate"></i>
+        </a>
+        <a href="https://orcid.org/my-orcid?orcid=0000-0002-5244-678X" target="_blank" title="ORCID" class="hover:text-gray-300">
+          <i class="fab fa-orcid"></i>
+        </a>
+      </div>
+    </div>
+
+    <p class="text-sm">© 2026 Akash Kumar Tarai</p>
+
+  </div>
+</footer>
+
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>
